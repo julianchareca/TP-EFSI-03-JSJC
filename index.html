@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Buscador de películas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="bg-dark text-white">
+		<div class="container">
+			<h1>Buscador de películas</h1>
+		</div>
+	</header>
+	<main class="container my-4">
+		<form class="mb-4">
+			<div class="form-row">
+				<div class="col-md-4 mb-3">
+					<label for="searchTerm">Buscar:</label>
+					<input type="text" class="form-control" id="searchTerm" name="searchTerm">
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="type">Tipo:</label>
+					<select class="form-control" id="type" name="type">
+						<option value="movie">Película</option>
+						<option value="series">Serie</option>
+						<option value="episode">Episodio</option>
+					</select>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="year">Año:</label>
+					<input type="text" class="form-control" id="year" name="year">
+				</div>
+				<div class="col-md-2 mb-3">
+					<label>&nbsp;</label>
+					<button type="submit" class="btn btn-block btn-primary">Buscar</button>
+				</div>
+			</div>
+		</form>
+		<table id="results" class="table table-striped">
+			<thead>
+				<tr>
+					<th>Título</th>
+					<th>Año</th>
+					<th>Tipo</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

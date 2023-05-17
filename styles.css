@@ -1,0 +1,61 @@
+header {
+	padding: 20px;
+	background: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 0, 0));
+	color: white;
+	text-align: center;
+  }
+  
+  h1 {
+	font-family: Avantgarde;
+	font-size: 32px;
+	margin: 0;
+  }
+
+  .form-row {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	font-family: Avantgarde;
+	font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+  }
+  
+  button {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background: linear-gradient(to right, rgb(46, 255, 245),  blue);
+	cursor: pointer;
+	font-family: Avantgarde;
+  }
+  
+  table {
+	font-family: Avantgarde;
+	width: 100%;
+	border-collapse: collapse;
+  }
+  
+  th,
+  td {
+	padding: 10px;
+	text-align: left;
+  }
+  
+  thead {
+	background: linear-gradient(to right, rgb(255, 0, 212), rgb(255, 0, 149));
+	color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
